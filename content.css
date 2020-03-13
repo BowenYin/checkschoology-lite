@@ -1,0 +1,144 @@
+div.csl-checkbox {
+  position: absolute;
+  right: 0;
+  display: none;
+  color: #80868B;
+  background-color: inherit;
+  font-family: "Material Icons";
+  font-size: 19px;
+  margin-top: -2px;
+  z-index: 1;
+  transition: color 100ms;
+}
+div.csl-checkbox:hover {
+  color: #3C4043;
+}
+.fc-widget-content {
+  transition: background-color 100ms;
+}
+.fc-event {
+  transition: opacity 100ms;
+}
+.fc-event.csl-completed {
+  opacity: 0.5;
+}
+.fc-event.csl-completed .fc-event-title {
+  text-decoration: line-through;
+}
+.fc-event:not(.csl-completed):hover div.csl-checkbox,
+.fc-event.csl-completed div.csl-checkbox {
+  display: block !important;
+  opacity: 1 !important;
+}
+div.csl-checkbox.csl-checked {
+  color: #34A853;
+}
+div.csl-checkbox.csl-checked:hover {
+  opacity: 1;
+}
+
+.color-default-personal, .color-default-personal.selected-color, .color-codes-box .color-default-personal.swatches, .fc-content .fc-event-skin.color-default-personal {
+  background-color: #D6E4FC !important;
+  border-color: white !important;
+}
+.color-default-groups, .color-default-groups.selected-color, .color-codes-box .color-default-groups.swatches, .fc-content .fc-event-skin.color-default-groups {
+  background-color: #CEEAD6 !important;
+  border-color: white !important;
+}
+.color-default-courses, .color-default-courses.selected-color, .color-codes-box .color-default-courses.swatches, .fc-content .fc-event-skin.color-default-courses {
+  background-color: #FEDFC8 !important;
+  border-color: white !important;
+}
+.color-default-school, .color-default-school.selected-color, .color-codes-box .color-default-school.swatches, .fc-content .fc-event-skin.color-default-school {
+  background-color: #e9d5ff !important;
+  border-color: white !important;
+}
+.color-1, .color-1.selected-color, .color-codes-box .color-1.swatches, .fc-content .fc-event-skin.color-1 {
+  background-color: #FFF03F !important;
+  border-color: white !important;
+}
+.color-2, .color-2.selected-color, .color-codes-box .color-2.swatches, .fc-content .fc-event-skin.color-2 {
+  background-color: #FEEFC3 !important;
+  border-color: white !important;
+}
+.color-3, .color-3.selected-color, .color-codes-box .color-3.swatches, .fc-content .fc-event-skin.color-3 {
+  background-color: #C1E8F1 !important;
+  border-color: white !important;
+}
+.color-4, .color-4.selected-color, .color-codes-box .color-4.swatches, .fc-content .fc-event-skin.color-4 {
+  background-color: #FDDCEE !important;
+  border-color: white !important;
+}
+.color-5, .color-5.selected-color, .color-codes-box .color-5.swatches, .fc-content .fc-event-skin.color-5 {
+  background-color: #FAD2CF !important;
+  border-color: white !important;
+}
+.color-6, .color-6.selected-color, .color-codes-box .color-6.swatches, .fc-content .fc-event-skin.color-6 {
+  background-color: #FFC992 !important;
+  border-color: white !important;
+}
+.color-7, .color-7.selected-color, .color-codes-box .color-7.swatches, .fc-content .fc-event-skin.color-7 {
+  background-color: #B9D0FD !important;
+  border-color: white !important;
+}
+.color-8, .color-8.selected-color, .color-codes-box .color-8.swatches, .fc-content .fc-event-skin.color-8 {
+  background-color: #FDB7D1 !important;
+  border-color: white !important;
+}
+.color-9, .color-9.selected-color, .color-codes-box .color-9.swatches, .fc-content .fc-event-skin.color-9 {
+  background-color: #F9B2B5 !important;
+  border-color: white !important;
+}
+.color-10, .color-10.selected-color, .color-codes-box .color-10.swatches, .fc-content .fc-event-skin.color-10 {
+  background-color: #A0E4B8 !important;
+  border-color: white !important;
+}
+.color-11, .color-11.selected-color, .color-codes-box .color-11.swatches, .fc-content .fc-event-skin.color-11 {
+  background-color: #DECDCC !important;
+  border-color: white !important;
+}
+.color-12, .color-12.selected-color, .color-codes-box .color-12.swatches, .fc-content .fc-event-skin.color-12 {
+  background-color: #F8F9FA !important;
+  border-color: white !important;
+}
+.color-13, .color-13.selected-color, .color-codes-box .color-13.swatches, .fc-content .fc-event-skin.color-13 {
+  background-color: #FFDF81 !important;
+  border-color: white !important;
+}
+.color-14, .color-14.selected-color, .color-codes-box .color-14.swatches, .fc-content .fc-event-skin.color-14 {
+  background-color: #C2F3EB !important;
+  border-color: white !important;
+}
+.color-15, .color-15.selected-color, .color-codes-box .color-15.swatches, .fc-content .fc-event-skin.color-15 {
+  background-color: #EABAFF !important;
+  border-color: white !important;
+}
+.color-16, .color-16.selected-color, .color-codes-box .color-16.swatches, .fc-content .fc-event-skin.color-16 {
+  background-color: #E8EAED !important;
+  border-color: white !important;
+}
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2"),
+       url(https://fonts.gstatic.com/s/materialicons/v50/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff) format("woff");
+}
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}

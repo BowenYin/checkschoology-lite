@@ -4,7 +4,7 @@
   "description": "It's back: CheckSchoology Lite brings features from your favorite PCR extension to Schoology.",
   "manifest_version": 2,
   "icons": {
-    "128": "icons/icon256.png"
+    "128": "icons/icon128.png"
   },
   "background": {
     "scripts": ["background.js"],
@@ -22,7 +22,7 @@
   }],
   "browser_action": {
     "default_icon": {
-      "32": "icons/icon64.png"
+      "32": "icons/icon32.png"
     }
   },
   "permissions": [

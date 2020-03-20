@@ -12,10 +12,18 @@ function updateAll() {
   const cells = document.getElementsByClassName("fc-event");
   chrome.storage.sync.get("ids", function(result) {
     const ids = result.ids || {};
-    for (let i = 0; i < cells.length; i++) {
-      const event = events[i];
+    for (let i = 0, j; i < cells.length; i++) {
       const cell = cells[i];
+      const cellHTML = cell.getElementsByClassName("fc-event-title")[0].innerHTML;
       if (cell.childNodes[0].classList.contains("csl-checkbox")) continue;
+      let event = events[0];
+      for (j = 0; j < events.length; j++) {
+        const eventHTML = event.titleHTML.replace(/&quot;/g, "\"").replace(/&#039;/g, "'");
+        if (cellHTML.substring(cellHTML.indexOf(">")) == eventHTML.substring(eventHTML.indexOf(">")))
+          break;
+        event = events[j+1];
+      }
+      if (!event) continue;
       const el = document.createElement("div");
       el.classList.add("csl-checkbox", "material-icons");
       updateState(ids[event.id], el, cell);
